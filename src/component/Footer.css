@@ -1,0 +1,16 @@
+footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 48px var(--col-2);
+    background: var(--highlight-color-1);
+}
+
+footer h5, footer a {
+    color: var(--highlight-color-2);
+}
+
+footer ul {
+    margin-top: 24px;
+}
+

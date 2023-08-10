@@ -1,0 +1,17 @@
+.highlights {
+    padding: 72px var(--col-2);
+}
+
+.highlights button {
+    background: var(--primary-color-2);
+    padding: 12px 24px;
+    border-radius: 4px;
+}
+
+.highlights > * {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 12px;
+}

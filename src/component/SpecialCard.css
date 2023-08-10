@@ -1,0 +1,28 @@
+.special {
+    flex: 1 1 1;
+    border-radius: 12px;
+    box-shadow: 1px 4px 4px #bbb;
+    background: var(--highlight-color-1);
+}
+
+.special img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.special h5, .special p {
+    float: left;
+}
+
+.special h6 {
+    color: var(--secondary-color-1);
+    float: right;
+}
+
+.special div {
+    margin: 24px 18px;
+}
+
+.special p {
+    margin-top: 24px;
+}

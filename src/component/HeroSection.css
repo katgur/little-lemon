@@ -1,0 +1,36 @@
+.hero {
+    display: flex;
+    flex-flow: row;
+    gap: var(--col-1);
+    background: var(--primary-color-1);
+    padding: 0 var(--col-2);
+    align-items: center;
+}
+
+.hero > * {
+    flex: 1 1 1;
+}
+
+.hero h1 {
+    color: var(--primary-color-2);
+}
+
+.hero h2, .hero p {
+    color: var(--highlight-color-1);
+}
+
+.hero p {
+    margin-top: 24px;
+}
+
+.hero button {
+    background: var(--highlight-color-1);
+    padding: 12px 24px;
+    border-radius: 4px;
+    margin-top: 48px;
+}
+
+.hero img {
+    width: 400px;
+    height: 400px;
+}

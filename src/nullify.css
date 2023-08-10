@@ -1,0 +1,19 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 0;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}

@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Karla ExtraBold";
+    src: url("./res/Karla-ExtraBold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Markazi Text Medium";
+    src: url("./res/MarkaziText-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Karla Bold";
+    src: url("./res/Karla-Bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Karla Medium";
+    src: url("./res/Karla-Medium.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Karla Regular";
+    src: url("./res/Karla-Regular.ttf") format('truetype');
+}
+
+html {
+    --col-1: 8.33%;
+    --col-2: 16.67%;
+    --col-3: 25%;
+    --col-4: 33.33%;
+    --col-5: 41.65%;
+    --col-6: 50%;
+    --col-7: 58.31%;
+    --col-8: 66.67%;
+    --col-9: 75%;
+    --col-10: 83.33%;
+    --col-11: 91.63%;
+    --col-12: 100%;
+    --primary-color-1: #495E57;
+    --primary-color-2: #F4CE14;
+    --secondary-color-1: #EE9972;
+    --secondary-color-2: #FBDABB;
+    --highlight-color-1: #EDEFEE;
+    --highlight-color-2: #333333;
+
+}
+
+.display-title {
+    font-size: 48px;
+    font-family: "Markazi Text Medium", serif;
+}
+
+.subtitle {
+    font-size: 30px;
+    font-family: "Markazi Text Medium", serif;
+}
+
+.section-title {
+    font-size: 15px;
+    font-family: "Karla ExtraBold", sans-serif;
+    text-transform: uppercase;
+}
+
+.card-title {
+    font-size: 14px;
+    font-family: "Karla Bold", sans-serif;
+}
+
+.lead-text {
+    font-size: 14px;
+    font-family: "Karla Medium", sans-serif;
+}
+
+.paragraph-text {
+    font-size: 14px;
+    font-family: "Karla Regular", sans-serif;
+}
+
+.highlight-text {
+    font-size: 14px;
+    font-family: "Karla Medium", sans-serif;
+}

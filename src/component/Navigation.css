@@ -1,0 +1,15 @@
+nav > ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-items: center;
+}
+
+nav > ul > li {
+    flex: 1 1 auto;
+    margin: 24px;
+}
+
+nav li a:link, nav li a:visited, nav li a:hover, nav li a:active {
+    color: var(--highlight-color-2)
+}

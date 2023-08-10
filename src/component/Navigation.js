@@ -1,13 +1,15 @@
+import "./Navigation.css";
+
 function Navigation() {
     const sections = [
-        "Home", "About", "Menu", "Reservations", "Order Online", "Login"
+        "home", "about", "menu", "reservations", "order online", "login"
     ]
 
     return (
         <nav>
             <ul>
                 {sections.map(section => {
-                    return <li><a href={`#${section}`}>{section}</a></li>
+                    return <li key={section}><a className="section-title" href={`#${section}`}>{section}</a></li>
                 })}
             </ul>
         </nav>
