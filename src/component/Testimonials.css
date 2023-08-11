@@ -6,16 +6,17 @@
 
 .testimonials > div {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     gap: 24px;
 }
 
 .testimonials > div > * {
-    flex: 1 1 1;
+    flex: 1 1 auto;
 }
 
 .testimonials .card {
     padding: 12px 24px;
+    width: var(--col-2);
 }
 
 .testimonials .star-section {
@@ -24,11 +25,7 @@
 
 .testimonials .persona-section {
     display: flex;
-    flex-flow: row no-wrap;
+    flex-flow: row;
     align-items: center;
     justify-content: space-around;
-}
-
-.testimonials .card > p {
-    float: left;
 }
