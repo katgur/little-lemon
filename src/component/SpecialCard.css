@@ -1,28 +1,25 @@
-.special {
+.highlights .card {
     flex: 1 1 1;
-    border-radius: 12px;
-    box-shadow: 1px 4px 4px #bbb;
-    background: var(--highlight-color-1);
 }
 
-.special img {
+.highlights .card img {
     width: 100%;
     object-fit: fill;
 }
 
-.special h5, .special p {
+.highlights .card h5, .highlights .card p {
     float: left;
 }
 
-.special h6 {
+.highlights .card h6 {
     color: var(--secondary-color-1);
     float: right;
 }
 
-.special div {
+.highlights .card div {
     margin: 24px 18px;
 }
 
-.special p {
+.highlights .card p {
     margin-top: 24px;
 }

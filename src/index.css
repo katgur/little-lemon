@@ -80,3 +80,9 @@ html {
     font-size: 14px;
     font-family: "Karla Medium", sans-serif;
 }
+
+.card {
+    border-radius: 12px;
+    box-shadow: 1px 4px 4px #bbb;
+    background: var(--highlight-color-1);
+}

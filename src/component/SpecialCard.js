@@ -2,7 +2,7 @@ import "./SpecialCard.css";
 
 function SpecialCard({ name, price, description, image }) {
     return (
-        <div className="special">
+        <div className="card">
             <img src={image} alt="special" />
             <div>
                 <h5 className="card-title">{name}</h5>
