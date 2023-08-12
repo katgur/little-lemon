@@ -7,7 +7,7 @@ a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 
-ul {
+ul, ol {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -16,4 +16,9 @@ ul {
 button {
     all: unset;
     cursor: pointer;
+}
+
+input, select, textarea {
+    all: unset;
+    padding: 12px 24px;
 }

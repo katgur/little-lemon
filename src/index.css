@@ -46,33 +46,33 @@ html {
 }
 
 .display-title {
-    font-size: 48px;
+    font-size: 48pt;
     font-family: "Markazi Text Medium", serif;
 }
 
 .subtitle {
-    font-size: 30px;
+    font-size: 30pt;
     font-family: "Markazi Text Medium", serif;
 }
 
 .section-title {
-    font-size: 15px;
+    font-size: 15pt;
     font-family: "Karla ExtraBold", sans-serif;
     text-transform: uppercase;
 }
 
 .card-title {
-    font-size: 14px;
+    font-size: 14pt;
     font-family: "Karla Bold", sans-serif;
 }
 
 .lead-text {
-    font-size: 14px;
+    font-size: 14pt;
     font-family: "Karla Medium", sans-serif;
 }
 
 .paragraph-text {
-    font-size: 14px;
+    font-size: 14pt;
     font-family: "Karla Regular", sans-serif;
 }
 
@@ -81,8 +81,22 @@ html {
     font-family: "Karla Medium", sans-serif;
 }
 
+.section-categories {
+    font-size: 12pt;
+    font-family: "Karla ExtraBold", sans-serif;
+}
+
 .card {
     border-radius: 12px;
     box-shadow: 1px 4px 4px #bbb;
     background: var(--highlight-color-1);
+}
+
+button {
+    padding: 12px 24px;
+    border-radius: 4px;
+}
+
+select {
+    cursor: pointer;
 }

@@ -1,0 +1,56 @@
+@media (min-width: 786px) {
+    .two-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 48px;
+    }
+}
+
+.booking {
+    padding: 72px var(--col-2);
+}
+
+.booking form ul {
+    display: inline;
+}
+
+.booking ul > * {
+    margin: 24px 0;
+}
+
+.booking ul span {
+    margin: 0 12px;
+}
+
+.booking label {
+    margin-right: 24px;
+}
+
+.booking textarea {
+    display: block;
+    margin-top: 12px;
+    width: 100%;
+    height: 200px;
+}
+
+.tag {
+    display: inline;
+    border-radius: 12px;
+    box-shadow: 1px 4px 4px #bbb;
+    background: var(--highlight-color-1);
+    padding: 8px 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.centered {
+    margin: auto;
+    width: fit-content;
+    margin-top: 72px;
+    text-align: center;
+}
+
+.error {
+    color: var(--secondary-color-1);
+}

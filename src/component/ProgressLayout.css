@@ -1,0 +1,36 @@
+.progress-view > ol {
+    display: flex;
+    flex-flow: row;
+}
+
+.progress-view > ol > * {
+    flex: 1 1 auto;
+}
+
+.progress-tile {
+    background: var(--primary-color-1);
+    height: 8px;
+    border-radius: 3px;
+    margin: 0 4px;
+}
+
+.progress-tile__active {
+    background: var(--primary-color-2);
+    height: 8px;
+    border-radius: 3px;
+    margin: 0 4px;
+}
+
+.invisible {
+    color: rgba(33, 33, 33, 0.4);
+}
+
+.progress button {
+    background: var(--primary-color-2);
+    color: var(--highlight-color-2);
+    margin: 24px 12px;
+}
+
+.progress main {
+    margin: 48px 0;
+}
