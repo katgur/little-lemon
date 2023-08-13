@@ -24,7 +24,7 @@ function Footer() {
                 <ul>
                     {
                         options.map(option => {
-                            return <li><a className="paragraph-text" href={`#${option}`}>{option}</a></li>
+                            return <li key={option}><a className="paragraph-text" href={`#${option}`}>{option}</a></li>
                         })
                     }
                 </ul>
@@ -39,7 +39,7 @@ function Footer() {
             </div>
             {
                 menu.map(column => {
-                    return <Column {...column} />
+                    return <Column key={column.header} {...column} />
                 })
             }
         </footer>

@@ -21,7 +21,7 @@
 .progress button {
     background: var(--primary-color-2);
     color: var(--highlight-color-2);
-    margin: 24px 12px;
+    margin: 24px 8px;
 }
 
 .progress main {

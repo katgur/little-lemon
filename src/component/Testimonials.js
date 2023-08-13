@@ -8,24 +8,28 @@ import "./Testimonials.css";
 function Testimonials() {
     const data = [
         {
+            id: 1,
             rating: 5,
             name: "John Doe",
             image: pic1,
             review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
         },
         {
+            id: 2,
             rating: 5,
             name: "John Doe",
             image: pic2,
             review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         },
         {
+            id: 3,
             rating: 5,
             name: "Jane Doe",
             image: pic3,
             review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
         },
         {
+            id: 4,
             rating: 5,
             name: "Jane Doe",
             image: pic4,
@@ -54,7 +58,7 @@ function Testimonials() {
             <div>
                 {
                     data.map(review => {
-                        return <Card key={review.name} {...review} />
+                        return <Card key={review.id} {...review} />
                     })
                 }
             </div>

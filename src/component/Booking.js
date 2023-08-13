@@ -20,7 +20,7 @@ const CommentForm = ({ onSubmit }) => {
     )
 }
 
-const Details = ({ booking, onConfirm }) => {
+const Details = ({ booking, onConfirm, onBack }) => {
     return (
         <div>
             <ul>
@@ -36,7 +36,7 @@ const Details = ({ booking, onConfirm }) => {
                     })
                 }
             </ul>
-            <button className="lead-text">Back</button>
+            <button onClick={onBack} className="lead-text">Back</button>
             <button onClick={onConfirm} className="lead-text">Confirm</button>
         </div>
 
@@ -68,10 +68,14 @@ function Booking() {
             });
     }
 
+    const onBack = () => {
+        setStepIndex(0);
+    }
+
     const steps = [
         {
             name: "Order Details",
-            view: <BookingForm onSubmit={onSubmit} />,
+            view: <BookingForm booking={booking.current} onSubmit={onSubmit} />,
         },
         {
             name: "Comment",
@@ -79,7 +83,7 @@ function Booking() {
         },
         {
             name: "Check Order Details",
-            view: <Details booking={booking.current} onConfirm={onConfirm} />,
+            view: <Details booking={booking.current} onConfirm={onConfirm} onBack={onBack} />,
         },
         {
             name: "Confirmed",

@@ -2,14 +2,22 @@ const delay = (ms, mock) => {
     return new Promise(resolve => setTimeout(() => resolve(JSON.stringify(mock)), ms));
 }
 
+const cache = {};
+
 export async function fetchAPI(date) {
-    const length = Math.random() * 5;
-    const res = [];
-    for (var i = 0; i < length; i++) {
-        var hours = Math.round((Math.random() * 8)) + 1;
-        res.push(`${hours}:00 pm`)
+    const cached = cache[date];
+    if (cached) {
+        return delay(1000, { availableTimes: cached });
     }
-    return delay(1000, { availableTimes: res.sort() });
+    const res = [];
+    for (var i = 0; i < 9; i++) {
+        if (Math.random() < 0.5) {
+            res.push(`${i + 1}:00 pm`)
+        }
+    }
+    res.sort();
+    cache[date] = res;
+    return delay(1000, { availableTimes: res });
 }
 
 export async function submitAPI(formData) {

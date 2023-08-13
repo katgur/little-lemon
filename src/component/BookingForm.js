@@ -1,16 +1,25 @@
 import { fetchAPI } from "../api/api";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 
-const BookingForm = ({ onSubmit }) => {
+const updateAvailableTimes = (date, setAvailableTimes) => {
+    fetchAPI(date)
+        .then(response => {
+            setAvailableTimes(JSON.parse(response).availableTimes);
+        });
+}
+
+const BookingForm = ({ booking, onSubmit }) => {
     const [availableTimes, setAvailableTimes] = useState([]);
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+
+    useEffect(() => {
+        reset(booking);
+        updateAvailableTimes(booking.date, setAvailableTimes);
+    }, [booking])
 
     const onDateChange = (e) => {
-        fetchAPI(e.target.value)
-            .then(response => {
-                setAvailableTimes(JSON.parse(response).availableTimes);
-            });
+        updateAvailableTimes(e.target.value, setAvailableTimes);
     }
 
     return (
