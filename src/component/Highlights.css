@@ -10,7 +10,7 @@
 
 .highlights > * {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     gap: 24px;
     margin-top: 12px;

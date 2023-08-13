@@ -7,22 +7,15 @@
     flex: 1 1 auto;
 }
 
-.progress-tile {
-    background: var(--primary-color-1);
-    height: 8px;
+.progress-view li {
+    border-bottom: 4px solid var(--primary-color-2);
     border-radius: 3px;
     margin: 0 4px;
 }
 
-.progress-tile__active {
-    background: var(--primary-color-2);
-    height: 8px;
-    border-radius: 3px;
-    margin: 0 4px;
-}
-
-.invisible {
+.progress .invisible {
     color: rgba(33, 33, 33, 0.4);
+    border-bottom: 4px solid var(--primary-color-1);
 }
 
 .progress button {

@@ -1,5 +1,5 @@
 .highlights .card {
-    flex: 1 1 1;
+    flex: 1 1 200px;
 }
 
 .highlights .card img {
@@ -7,7 +7,7 @@
     object-fit: fill;
 }
 
-.highlights .card h5, .highlights .card p {
+.highlights .card h5, .highlights .card p, .highlights .card span {
     float: left;
 }
 
@@ -22,4 +22,8 @@
 
 .highlights .card p {
     margin-top: 24px;
+}
+
+.highlights .card span {
+    margin-bottom: 24px;
 }

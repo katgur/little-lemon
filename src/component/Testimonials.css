@@ -11,7 +11,7 @@
 }
 
 .testimonials > div > * {
-    flex: 1 1 auto;
+    flex: 1 1 150px;
 }
 
 .testimonials .card {
@@ -25,7 +25,7 @@
 
 .testimonials .persona-section {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
 }

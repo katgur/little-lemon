@@ -17,7 +17,7 @@ function Footer() {
         }
     ]
 
-    const Column = ({header, options}) => {
+    const Column = ({ header, options }) => {
         return (
             <div>
                 <h5 className="section-title">{header}</h5>
@@ -34,7 +34,9 @@ function Footer() {
 
     return (
         <footer>
-            <img src={logo} alt="Little Lemon" />
+            <div>
+                <img src={logo} alt="Little Lemon" />
+            </div>
             {
                 menu.map(column => {
                     return <Column {...column} />

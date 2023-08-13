@@ -9,11 +9,8 @@ function ProgressLayout({ steps, stepIndex }) {
                     {
                         steps.map((step, index) => {
                             return (
-                                <li key={step.name}>
-                                    <span className={stepIndex === index ? "section-categories" : "section-categories invisible"}>
-                                        {`${index + 1}. ${step.name}`}
-                                    </span>
-                                    <div className={stepIndex === index ? "progress-tile__active" : "progress-tile"}></div>
+                                <li key={step.name} className={stepIndex === index ? "section-categories" : "section-categories invisible"}>
+                                    {`${index + 1}. ${step.name}`}
                                 </li>
                             )
                         })

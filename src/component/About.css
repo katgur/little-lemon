@@ -1,13 +1,18 @@
 .about {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     gap: var(--col-1);
-    padding: 72px var(--col-2);
+    padding: 72px var(--col-1);
     align-items: center;
 }
 
 .about > * {
-    flex: 1 1 1;
+    flex: 1 1 400px;
+}
+
+.about img {
+    width: 100%;
+    border-radius: 8px;
 }
 
 .about h1 {

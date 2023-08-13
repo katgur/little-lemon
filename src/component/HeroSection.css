@@ -1,14 +1,20 @@
 .hero {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     gap: var(--col-1);
-    background: var(--primary-color-1);
-    padding: 0 var(--col-2);
+    padding: 24px var(--col-1);
     align-items: center;
+    background: var(--primary-color-1);
 }
 
 .hero > * {
-    flex: 1 1 1;
+    flex: 1 1 400px;
+    margin: 24px;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 8px;
 }
 
 .hero h1 {
@@ -28,9 +34,4 @@
     padding: 12px 24px;
     border-radius: 4px;
     margin-top: 48px;
-}
-
-.hero img {
-    width: 400px;
-    height: 400px;
 }

@@ -19,6 +19,6 @@ button {
 }
 
 input, select, textarea {
-    all: unset;
+    border: 0;
     padding: 12px 24px;
 }

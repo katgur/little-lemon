@@ -7,6 +7,12 @@
     }
 }
 
+@media (max-width: 786px) {
+    .booking form div {
+        margin: 24px 0;
+    }
+}
+
 .booking {
     padding: 72px var(--col-2);
 }
@@ -15,16 +21,22 @@
     display: inline;
 }
 
-.booking ul > * {
-    margin: 24px 0;
+.booking label {
+    margin-top: 24px;
+    margin-right: 24px;
+}
+
+.booking form input, .booking form select {
+    display: block;
+    margin-top: 12px;
+}
+
+.booking form .error {
+    margin-top: 12px;
 }
 
 .booking ul span {
     margin: 0 12px;
-}
-
-.booking label {
-    margin-right: 24px;
 }
 
 .booking textarea {

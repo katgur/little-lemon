@@ -3,12 +3,11 @@ const delay = (ms, mock) => {
 }
 
 export async function fetchAPI(date) {
-    const length = Math.random() * 10;
+    const length = Math.random() * 5;
     const res = [];
     for (var i = 0; i < length; i++) {
         var hours = Math.round((Math.random() * 8)) + 1;
-        var minutes = Math.round((Math.random() * 59));
-        res.push(`${hours}:${minutes} pm`)
+        res.push(`${hours}:00 pm`)
     }
     return delay(1000, { availableTimes: res.sort() });
 }
